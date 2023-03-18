@@ -1,0 +1,78 @@
+{
+  "name": "reboot-3d-tool",
+  "version": "1.0.0",
+  "description": "Advanced 3D Interior Tool",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IncodeSatx/Reboot3DTool.git"
+  },
+  "keywords": [
+    "interior",
+    "3DTool",
+    "curtains",
+    "ascentdecor",
+    "designsoftware"
+  ],
+  "author": "Satyam Anand",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IncodeSatx/Reboot3DTool/issues"
+  },
+  "homepage": "https://github.com/IncodeSatx/Reboot3DTool#readme",
+  "devDependencies": {
+    "babel-plugin-transform-async-to-generator": "^6.24.1",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "electron-compile": "^6.4.2",
+    "electron-prebuilt-compile": "8.2.0",
+    "electron-squirrel-startup": "^1.0.0",
+    "request": "^2.83.0",
+    "requests": "^0.2.2"
+  },
+  "dependencies": {
+    "electron-compile": "^6.4.4",
+    "electron-forge": "^5.2.4",
+    "electron-squirrel-startup": "^1.0.0",
+    "request": "^2.83.0",
+    "requests": "^0.2.2"
+  },
+  "config": {
+    "forge": {
+      "make_targets": {
+        "win32": [
+          "squirrel"
+        ],
+        "darwin": [
+          "zip"
+        ],
+        "linux": [
+          "deb",
+          "rpm"
+        ]
+      },
+      "electronPackagerConfig": {
+        "packageManager": "yarn"
+      },
+      "electronWinstallerConfig": {
+        "name": "reboot_3d_tool"
+      },
+      "electronInstallerDebian": {},
+      "electronInstallerRedhat": {},
+      "github_repository": {
+        "owner": "",
+        "name": ""
+      },
+      "windowsStoreConfig": {
+        "packageName": "",
+        "name": "reboot3dtool"
+      }
+    }
+  }
+}
