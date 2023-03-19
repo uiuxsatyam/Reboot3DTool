@@ -11,6 +11,7 @@ const createWindow = () => {
     height: 600,
     maxWidth: 1600,
     maxHeight: 1200,
+    backgroundColor: '#1B1725',
 
     webPreferences: {
       nodeIntegration:true,
